@@ -37,4 +37,10 @@ router.delete("/:id", (req, res) => {
   });
 });
 
+// Remove a user's associated thoughts when deleted.
+// /api/users/:userId/friends/:friendId
+
+// Add a friend
+
+// Delete a friend
 module.exports = router;

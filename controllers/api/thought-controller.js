@@ -8,7 +8,7 @@ router.get("/", (req, res) => {
   });
 });
 
-// Get thought by ID
+// Get single thought by ID
 router.get("/:id", (req, res) => {
   Thought.findById(req.params.id).then((result) => {
     res.json(result);
@@ -39,4 +39,9 @@ router.delete("/:id", (req, res) => {
   });
 });
 
+// /api/thoughts/:thoughtId/reactions
+
+// Creat a reaction stored in a single thoughts array
+
+// Delete or Remove a reaction by reactionID
 module.exports = router;

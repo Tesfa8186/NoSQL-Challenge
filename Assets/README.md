@@ -210,3 +210,8 @@ This will not be a model, but rather will be used as the `reaction` field's subd
 - `POST` to create a reaction stored in a single thought's `reactions` array field
 
 - `DELETE` to pull and remove a reaction by the reaction's `reactionId` value
+
+## License
+
+- Coverd by
+  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
