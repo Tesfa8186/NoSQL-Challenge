@@ -39,9 +39,4 @@ router.delete("/:id", (req, res) => {
   });
 });
 
-// /api/thoughts/:thoughtId/reactions
-
-// Creat a reaction stored in a single thoughts array
-
-// Delete or Remove a reaction by reactionID
 module.exports = router;
