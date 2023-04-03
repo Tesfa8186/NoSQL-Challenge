@@ -36,8 +36,8 @@
 
 ## Links
 
-- [Walkthroght Video](https://watch.screencastify.com/v/gx8JxlrHaRh1pozfi4o7)
 - [Code-Walkthrough-Video](https://watch.screencastify.com/v/utLZf2bsexfOkDGGVD9U)
+- [Walkthroght Video](https://watch.screencastify.com/v/gx8JxlrHaRh1pozfi4o7)
 -
 - ![Screenshot of Insomnia Page](./Assets/Screenshot-of-Insomnia-Page.png)
 
