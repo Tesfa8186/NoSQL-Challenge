@@ -39,4 +39,42 @@ router.delete("/:id", (req, res) => {
   });
 });
 
+//api/thoughts/:thoughtId/reactions
+
+// "POST" Create a reaction
+router.post("/:id/reactions", (req, res) => {
+  Thought.findByIdAndUpdate(
+    req.params.id,
+    {
+      $addToSet: {
+        reactions: req.body,
+      },
+    },
+    {
+      new: true,
+    }
+  ).then((result) => {
+    res.json(result);
+  });
+});
+
+// "DELETE" Remove a reaction by ID
+router.delete("/:id/reactions/:reactionId", (req, res) => {
+  Thought.findByIdAndUpdate(
+    req.params.id,
+    {
+      $pull: {
+        reactions: {
+          reactionId: req.params.reactionId,
+        },
+      },
+    },
+    {
+      new: true,
+    }
+  ).then((result) => {
+    res.json(result);
+  });
+});
+
 module.exports = router;
